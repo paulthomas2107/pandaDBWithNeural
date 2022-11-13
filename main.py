@@ -34,7 +34,7 @@ print(df)
 new_df = pd.DataFrame({
     "ssn": [21766, 818, 653],
     "name": ["Fox", "Lion", "Tiger"],
-    "age":  [30, 31, 29]
+    "age": [30, 31, 29]
 })
 
 new_df.to_sql("people", con=conn, if_exists="append", index=False)
